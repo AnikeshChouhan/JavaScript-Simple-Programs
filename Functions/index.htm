@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change_Background-Color</title>
+    <style>
+        .Red {
+            background-color: red;
+            color: aliceblue;
+        }
+
+        .Blue {
+            background-color: Blue;
+            color: aliceblue;
+        }
+
+        .Black {
+            background-color: Black;
+            color: aliceblue;
+        }
+
+        .Orange {
+            background-color: Orange;
+            color: rgb(24, 90, 148);
+        }
+
+        .Yellow {
+            background-color: Yellow;
+            color: rgb(106, 162, 210);
+        }
+
+        .allBtn {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 1rem;
+            width: 6 rem;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="allBtn">
+        <button type="button" class="Red">Red</button>
+        <button type="button" class="Blue">Blue</button>
+        <button type="button" class="Black">Black</button>
+        <button type="button" class="Orange">Orange</button>
+        <button type="button" class="Yellow">Yellow</button>
+    </div>
+    <script>
+        document.querySelector(".Red").addEventListener("click", function () {
+            document.body.style.background = "red";
+        })
+        document.querySelector(".Blue").addEventListener("click", function () {
+            document.body.style.background = "blue";
+        })
+        document.querySelector(".Black").addEventListener("click", function () {
+            document.body.style.background = "Black";
+        })
+        document.querySelector(".Orange").addEventListener("click", function () {
+            document.body.style.background = "Orange";
+        })
+        document.querySelector(".Yellow").addEventListener("click", function () {
+            document.body.style.background = "Yellow";
+        })
+    </script>
+</body>
+
+</html>
